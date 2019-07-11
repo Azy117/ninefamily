@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/all.css" />
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<title>首页-登录</title>
+		<style>
+			body{
+				background-color:#fff; 
+			}
+			.xf{
+				top: 90%;
+				display: none;
+			}
+			.div1{
+				font-size: 18px;
+			}
+			.div2{
+				font-size: 18px;
+			}
+			a{
+				text-decoration: none !important;
+			}
+			.denglu{
+				background:#fff;
+			}
+			.denglu1 input{
+				background:#f1f1f1;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="se2" style="width:100%;height:100%;position: fixed;opacity: 0.6;background: #000;"></div>
+		<div class="sd" style="width:100%;height:100%;position: fixed;opacity: 0.6;background: #000;"></div>
+		<div class="sd">
+			<div style="width:100%;height:40px;margin: 0px;"></div>
+			<img class="gb3" src="./img/关闭3.png"/>
+			<a href="./list.html"><div style="margin-top:28px;">女人美容衣装鞋饰商业街</div></a>
+			<a href="./list.html"><div>美食餐饮商业街</div></a>
+			<a href="./list.html"><div>宾馆民宿任你选</div></a>
+			<a href="./list.html"><div>家装用品商业街</div></a>
+				<ul>
+					<li>家庭装修，装潢</li>
+					<li>床上用品</li>
+					<li>家居用品</li>
+				</ul>
+			<a href="./list.html"><div>高端家庭定制系列</div></a>
+				<ul>
+					<li>私家律师定制</li>
+					<li>私家厨师定制</li>
+					<li style="padding:13px 0px;">私家保健医生定制</li>
+					<li>私家护士定制</li>
+					<li style="padding:0px 15px;padding-top:10px;line-height: 15px;text-align: left;">私家美容美发
+							师定制</li>
+					<li>私家保镖定制</li>
+					<li>私家保洁定制</li>
+					<li>私家理财师定制</li>
+					<li>私家教师定制</li>
+					
+				</ul>
+			<a href="./list.html"><div>交友</div></a>
+				<ul>
+					<li>我为卿狂交友</li>
+					<li>高端交友</li>
+					<li>真诚姻缘</li>
+				</ul>
+			<a href="./list.html"><div>家庭理财：个股走势之我言</div></a>
+			<a href="./list.html"><div>农资农具商品街</div></a>
+
+		</div>
+		<a href="./sxfb.html"><div class="xf" style="margin-top: -120px;"><img src="./img/bg12.png"/><p style="margin-top:3px;">发布</p></div></a>
+		<a href="#header1"><div class="xf" style="margin-top: -40px;background:#daeffc;"><img src="./img/bg13.png"/><p style="margin-top:3px;color: #0d61d4">顶部</p></div></a>
+		<div class="dlheader">
+			<div id="header1" class="header1">
+				<a href="./scindex.html" style="text-decoration:none;color:#fff;">九号家庭商城</text></a>
+				<a href="./login.html"><button class="zc">注册</button></a>
+				<a href="./login.html">
+					<button class="dl">登录</button>
+				</a>
+			</div>
+		</div>
+		
+		<div class="sousuo">
+			<a href="./index.html"><text style="font-size:26px;color:#fff;float: left;">九号家庭</text></a>
+			<div class="city">
+				<p>保定</p>
+				<p>[ 切换 ]</p>
+			</div>
+			<div class="sdaoh">
+				<img class="sd1" src="./img/daohtu.jpg"/>
+			</div>
+			
+			<div class="sou">
+				<!-- <input placeholder="请输入关键词"/> -->
+				<img class="se1" src="./img/搜索1.png"/>
+			</div>
+			
+		</div>
+		
+			<div class="se">
+				<input placeholder="请输入关键词"/>
+				<button>搜索</button>
+			</div>
+			<script>
+				$('.sd1').click(function() {
+					$(".sd").css('display','block');
+				}); 
+				$('.gb3').click(function() {
+					$(".sd").css('display','none');
+				}); 
+				$('.se1').click(function() {
+					$(".se").css('display','block');
+					$(".se2").css('display','block');
+				}); 
+				$('.se2').click(function() {
+					$(".se").css('display','none');
+					$(".se2").css('display','none');
+				}); 
+			</script>
+
+		<div class="shangye" style="padding-bottom:70px;margin-top:-10px;">
+			<div class="denglu">
+				<div style="width:110px;height:35px;margin:0 auto;margin-top: 50px;">
+					<div class="div1">注册</div>
+					<div class="div2">登录</div>
+				</div>
+				<div class="denglu1">
+					<div class="dl1">账号</div>
+					<div><input placeholder="请输入账号"/> </div>
+					<div class="dl1">密码</div>
+					<div><input type="password" placeholder="请输入密码"/> </div>
+					<div class="dl1">验证码</div>
+					<div><input style="width:60%;" placeholder="请输入验证码"/><img src="./img/bg10.png" style="margin-left:20px;"/> </div>
+					<div style="margin: 0 auto;width: 180px;margin-top: 30px;"><button style="width:180px;height:40px;">登录</button></div>
+				</div>
+				<div class="denglu2">
+						<div class="dl1">身份证号</div>
+						<div><input placeholder="请输入身份证号"/> </div>
+						<div class="dl1">手机号</div>
+						<div><input placeholder="请输入手机号"/> </div>
+						<div class="dl1">账号</div>
+						<div><input placeholder="请输入账号"/> </div>
+						<div class="dl1">邮箱</div>
+						<div><input placeholder="请输入邮箱"/> </div>
+						<div class="dl1">密码</div>
+						<div><input type="password" placeholder="请输入密码"/> </div>
+						<div class="dl1">验证码</div>
+						<div><input style="width:50%;" placeholder="请输入验证码"/><img src="./img/bg10.png" style="margin-left:20px;"/> </div>
+						<div style="margin: 0 auto;width: 230px;margin-top: 30px;"><button>注册</button></div>
+				</div>
+				<div style="position:absolute;bottom:20px;text-align:center;color:#a3a3a3;">Copyright © 2019-2019九号家庭 备案号：冀ICP备00000000号</div>
+			</div>
+			
+		</div>
+		
+	</body>
+	
+	<script>
+		$('.div1').click(function() {
+			$(".shangye").css('position', 'relative');
+			$(".div1").css('color', '#0d61d4');
+			$(".div1").css('border-bottom', '3px #0d61d4 solid');
+			$(".div2").css('color', '#666');
+			$(".div2").css('border-bottom', 'none');
+			$(".denglu2").css('display','block');
+			$(".denglu1").css('display','none');
+		});
+		$('.div2').click(function() {
+			$(".shangye").css('position', 'static');
+			$(".div2").css('color', '#0d61d4');
+			$(".div2").css('border-bottom', '3px #0d61d4 solid');
+			$(".div1").css('color', '#666');
+			$(".div1").css('border-bottom', 'none');
+			$(".denglu1").css('display','block');
+			$(".denglu2").css('display','none');
+		});
+	</script>
+</html>

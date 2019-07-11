@@ -1,0 +1,171 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="./css/awesome-bootstrap-checkbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/build.css">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<title>评价</title>
+	<style>
+        a{
+            color: #333;
+        }
+        a:hover{
+            color: #333;
+        }
+        .qitaxq{
+            width: 100%;
+            display: flex;
+        }
+        .bai div {
+            float: left;
+            line-height: 20px;
+            text-align: left;
+        }
+
+        .bai img {
+            width: 99px;
+            height: 99px;
+        }
+
+        .bai {
+            width: 96%;
+            margin-top: 10px;
+            height: 130px;
+        }
+        .luan{
+            width: 220px !important;
+        }
+        .luan4{
+            margin-top: 15px;
+        }
+        .luanr{
+            width: 220 !important;
+            float: left !important;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        .shu{
+            float: right !important;
+            color: #333 !important;
+        }
+        .qian{
+            color: #e01212;
+            font-size: 20px;
+        }
+        .luan4{
+            margin-top: 7px;
+        }
+        .luanr{
+            margin-top: 13px;
+        }
+        .shifu{
+            width: 96%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+	<a href="./ddxq.html">
+        <div class="back" style="background:#fff;">
+            <img src="./img/返回.png" />
+            评价
+        </div>
+    </a>
+        <div class="bai">
+            <div class="luan2">
+                <img src="./img/bg21.png" style="float:left;" />
+                <div class="luan">JHXC减龄背带裤女宽松学生韩款复古显瘦牛仔裤九分裤</div>
+                
+                <div class="luan4">
+                    规格：白色E0573 <text style="margin-left:13px;">尺寸：S</text>
+                </div>
+                <div class="luanr">购买时间：2019-05-01</div>
+            </div>
+        </div>
+            <div class="shifu">
+                <text>实付金额</text>
+                <text style="color:#e01212;float:right;">￥248.00</text>
+            </div>
+            <div class="fenfen"></div>
+        <div style="width:96%;margin: 0 auto;background: #fff;">
+                <textarea style="margin-top:25px;min-height: 335px;max-height:335px;min-width:100%;max-width: 100%;border:1px solid #dfdfdf;background:#fff;border-radius: 20px;padding:10px;" 
+                placeholder="来分享消费体验吧"></textarea>
+                <div class="gslistbt" style="margin-top:30px;padding-bottom: 30px;">
+						<div class="upimg" style="width:60px;height:60px;">
+							<img src="./img/bg15.png" style="width:23px;height:20px;margin-top: 10px;margin-left:15px;float: none;"/>
+							<div style="color:#666666;text-align:center;font-size:16px;margin-top:5px;font-size:12px;">添加图片</div>
+                        </div>
+                       
+                </div>
+                </div>
+        </div>
+        <div style="width:100%;margin :0 auto;margin-top:35px;">
+                <button style="width:100%;height:40px;line-height:40px;text-align:center;color:#fff;background:#0d61d4;border:none;">确认</button>
+            </div>
+       
+   
+</body>
+</html>
+<script>
+		$('.scc1').click(function() {
+			$(".scc1").css('display', 'none');
+			$(".scc2").css('display', 'block');
+		});
+		$('.scc2').click(function() {
+			$(".scc2").css('display', 'none');
+			$(".scc1").css('display', 'block');
+		});
+        $('.scc3').click(function() {
+			$(".scc3").css('display', 'none');
+			$(".scc4").css('display', 'block');
+		});
+		$('.scc4').click(function() {
+			$(".scc4").css('display', 'none');
+			$(".scc3").css('display', 'block');
+		});
+        $('.scc5').click(function() {
+			$(".scc5").css('display', 'none');
+			$(".scc6").css('display', 'block');
+		});
+		$('.scc6').click(function() {
+			$(".scc6").css('display', 'none');
+			$(".scc5").css('display', 'block');
+		});
+        $(".xqlil").click(function(){
+            $('.xqlil').removeClass("active");
+            $(this).addClass("active");
+        });
+        $(".xqlil1").click(function(){
+            $('.xqlil1').removeClass("active");
+            $(this).addClass("active");
+        });
+        (function ($) { $('.spinner .btn:first-of-type').on('click', function() 
+        { $('.spinner input').val( parseInt($('.spinner input').val(), 10) - 1); });
+         $('.spinner .btn:last-of-type').on('click', function() { $('.spinner input').val( parseInt($('.spinner input').val(), 10) + 1); }); })(jQuery);
+        $(function () {
+            $('#myTab li:eq(1) a').tab('show');
+        });
+</script>
+
+<!-- <ul id="myTab" class="nav nav-tabs" style="margin-left:110px;">
+        <li class="active">
+            <a  data-toggle="tab">
+                    综合
+            </a>
+        </li>
+        <li><a  data-toggle="tab">价格<img src="./img/bg19.png"/></a></li>
+        <li><a  data-toggle="tab">销量<img src="./img/bg19.png"/></a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="home">
+               
+        </div>
+</div>
+<script>
+        $(function () {
+            $('#myTab li:eq(1) a').tab('show');
+        });
+</script> -->

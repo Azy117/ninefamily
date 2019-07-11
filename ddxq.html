@@ -1,0 +1,124 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="./css/awesome-bootstrap-checkbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/build.css">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<title>订单详情</title>
+    <style>
+         .bai div {
+            float: left;
+            line-height: 20px;
+            text-align: left;
+        }
+
+        .bai img {
+            width: 99px;
+            height: 99px;
+        }
+
+        .bai {
+            width: 96%;
+            margin-top: 10px;
+            height: 155px;
+        }
+        .luan{
+            width: 220px !important;
+        }
+        .luan4{
+            margin-top: 15px;
+        }
+        .luanr{
+            width: 220 !important;
+            float: left !important;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        .shu{
+            float: right !important;
+            color: #333 !important;
+        }
+        .qian{
+            color: #e01212;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="./wddd.html">
+        <div class="back">
+            <img src="./img/返回.png" />
+            订单详情
+        </div>
+    </a>
+    <!-- <div class="xqhead">
+        <div class="zhong">
+            <img src="./img/dfh.png"/>
+            <text>待发货</text>
+        </div>
+    </div> -->
+    <!-- <div class="xqhead">
+        <div class="zhong">
+            <img src="./img/dfk.png"/>
+            <text>待付款</text>
+        </div>
+    </div> -->
+    <div class="xqhead">
+        <div class="zhong">
+            <img src="./img/pjz.png"/>
+            <text>待评价</text>
+        </div>
+    </div>
+    <div class="xqsh">
+        <div class="xqsh1">
+            <text>收货人：<span>张三</span></text>
+            <text style="float:right;">13000000000</text>
+        </div>
+        <div class="xqsh2">
+           收货地址：河北省 保定市 竞秀区天威中路与朝阳南大街交汇处东南角鸿悦国际
+        </div>  
+    </div>
+    <div class="xfen"></div>
+    <div class="bai">
+        <div class="baibai">
+            <text>订单编号：664351000022</text>
+            <!-- <text style="color:#0d61d4;font-size:14px;float: right;">等待卖家收货</text> -->
+            <!-- <text style="color:#0d61d4;font-size:14px;float: right;">等待买家付款</text> -->
+
+        </div>
+        <div class="luan2">
+            <img src="./img/bg21.png" style="float:left;" />
+            <div class="luan">JHXC减龄背带裤女宽松学生韩款复古显瘦牛仔裤九分裤</div>
+            <div class="luan4">
+                规格：白色E0573 <text style="margin-left:13px;">尺寸：S</text>
+            </div>
+            <div class="luanr">
+                <div class="qian">￥248.00</div>
+                <div class="shu">X1</div>
+            </div>
+        </div>
+    </div>
+    <div class="xfen"></div>
+    <div class="shifu">
+        <text>实付金额</text>
+        <text style="color:#e01212;float:right;">￥248.00</text>
+    </div>
+    <div class="fenfen"></div>
+    <div class="xqxq">
+        <div class="xqdd">
+            订单详情
+        </div>
+        <div class="xq1">订单编号：664351000022</div>
+        <div class="xq1">下单时间：2017-11-10 08:42:11</div>
+        <!-- <div class="xq1">订单状态：等待买家发货</div> -->
+        <!-- <div class="xq1">订单状态：等待卖家付款</div> -->
+        <div class="xq1">订单状态：等待买家评价</div> 
+    </div>
+
+    <!-- <button class="bbb">去付款</button> -->
+    <a href="./pj.html"><button class="bbb">评价</button></a>
+</body>
+</html>

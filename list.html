@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/all.css" />
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<title>栏目列表</title>
+		<style>
+			a{
+				text-decoration: none;
+			}
+			.nav li.active{
+				color: #fff !important;
+				background: #0d61d4 ;
+			}
+			.nav li.active a{
+				color: #fff !important;
+			}
+			.nav > li > a{
+				padding: 0px 15px;
+			}
+			.over{
+				overflow: hidden
+			}
+			.nav{
+				overflow:scroll;
+				margin-top: 15px;
+				overflow-x: auto;
+				width: auto;
+				white-space: nowrap;
+			}
+			.nav li{
+				border-radius: 30px;
+				width: auto;
+				height: 30px;
+				font-size: 16px;
+				line-height: 30px;
+				display: inline-block;
+			}
+			
+			.neir21 :hover .bttt{
+				color: #0d61d4;
+			}
+		</style>
+	</head>
+	<body>
+			<div class="se2" style="width:100%;height:100%;position: fixed;opacity: 0.6;background: #000;"></div>
+			<div class="sd" style="width:100%;height:100%;position: fixed;opacity: 0.6;background: #000;"></div>
+			<div class="sd">
+				<div style="width:100%;height:40px;margin: 0px;"></div>
+				<img class="gb3" src="./img/关闭3.png"/>
+				<a href="./list.html"><div style="margin-top:28px;">女人美容衣装鞋饰商业街</div></a>
+				<a href="./list.html"><div>美食餐饮商业街</div></a>
+				<a href="./list.html"><div>宾馆民宿任你选</div></a>
+				<a href="./list.html"><div>家装用品商业街</div></a>
+					<ul>
+						<li>家庭装修，装潢</li>
+						<li>床上用品</li>
+						<li>家居用品</li>
+					</ul>
+				<a href="./list.html"><div>高端家庭定制系列</div></a>
+					<ul>
+						<li>私家律师定制</li>
+						<li>私家厨师定制</li>
+						<li style="padding:13px 0px;">私家保健医生定制</li>
+						<li>私家护士定制</li>
+						<li style="padding:0px 15px;padding-top:10px;line-height: 15px;text-align: left;">私家美容美发
+								师定制</li>
+						<li>私家保镖定制</li>
+						<li>私家保洁定制</li>
+						<li>私家理财师定制</li>
+						<li>私家教师定制</li>
+						
+					</ul>
+				<a href="./list.html"><div>交友</div></a>
+					<ul>
+						<li>我为卿狂交友</li>
+						<li>高端交友</li>
+						<li>真诚姻缘</li>
+					</ul>
+				<a href="./list.html"><div>家庭理财：个股走势之我言</div></a>
+				<a href="./list.html"><div>农资农具商品街</div></a>
+	
+			</div>
+			<a href="./sxfb.html"><div class="xf" style="margin-top: -120px;"><img src="./img/bg12.png"/><p style="margin-top:3px;">发布</p></div></a>
+			<a href="#header1"><div class="xf" style="margin-top: -40px;background:#daeffc;"><img src="./img/bg13.png"/><p style="margin-top:3px;color: #0d61d4">顶部</p></div></a>
+			<div class="dlheader">
+				<div id="header1" class="header1">
+					<a href="./scindex.html" style="text-decoration:none;color:#fff;">九号家庭商城</text></a>
+					<a href="./login.html"><button class="zc">注册</button></a>
+					<a href="./login.html">
+						<button class="dl">登录</button>
+					</a>
+				</div>
+			</div>
+			
+			<div class="sousuo">
+			<a href="./index.html"><text style="font-size:26px;color:#fff;float: left;">九号家庭</text></a>
+				<div class="city">
+					<p>保定</p>
+					<p>[ 切换 ]</p>
+				</div>
+				<div class="sdaoh">
+					<img class="sd1" src="./img/daohtu.jpg"/>
+				</div>
+				
+				<div class="sou">
+					<!-- <input placeholder="请输入关键词"/> -->
+					<img class="se1" src="./img/搜索1.png"/>
+				</div>
+				
+			</div>
+			
+				<div class="se">
+					<input placeholder="请输入关键词"/>
+					<button>搜索</button>
+				</div>
+				<script>
+					$('.sd1').click(function() {
+						$(".sd").css('display','block');
+					}); 
+					$('.gb3').click(function() {
+						$(".sd").css('display','none');
+					}); 
+					$('.se1').click(function() {
+						$(".se").css('display','block');
+						$(".se2").css('display','block');
+					}); 
+					$('.se2').click(function() {
+						$(".se").css('display','none');
+						$(".se2").css('display','none');
+					}); 
+				</script>
+			<div class="over">
+				<ul class="nav" role="tablist" id="vtab"> 
+					<li class="active"> <a href="#tab1" aria-controls="home"  data-toggle="tab">私家律师定制</a> </li> 
+					<li> <a href="#tab2"  data-toggle="tab">私家厨师定制</a> </li> 
+					<li> <a href="#tab3" data-toggle="tab">私家保健医生定制</a> </li> 
+					<li> <a href="#tab4" data-toggle="tab">私家护士定制</a> </li> 
+					<li> <a href="#tab4" data-toggle="tab">私家美容美发师定制</a> </li> 
+					<li> <a href="#tab5" data-toggle="tab">私家保镖定制</a> </li> 
+					<li> <a href="#tab6" data-toggle="tab">私家保洁定制</a> </li> 
+					<li> <a href="#tab7" data-toggle="tab">私家理财师定制</a> </li> 
+					<li> <a href="#tab8" data-toggle="tab">私家教师定制</a> </li> 
+				</ul> 
+			</div>
+		<div class="weizhi">当前位置：首页 > 高端家庭定制系列 > 私家律师定制</div>
+		<div class="list" style="margin-bottom:-10px;">
+			<div style="display:flex;"> 
+				<div class="tab-content vertical-tab-content col-xs-10" style="float:none;padding: 0px;width: 100%;"> 
+					<div role="tabpanel" class="tab-pane active" id="tab1">
+						<a href="./listxq.html">
+							<div class="neir21">
+								<img src="./img/bg5.png"/>
+								<div class="neir211" >
+									<div class="bttt">蝴蝶结衬衫变成了稳重优雅的学院风少女</div>
+									<div class="wenzi">两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易</div>
+								</div>
+							</div>
+						</a>
+						<div class="neir21">
+							<img src="./img/bg5.png"/>
+							<div class="neir211" >
+								<div class="bttt">蝴蝶结衬衫变成了稳重优雅的学院风少女</div>
+								<div class="wenzi">两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易</div>
+							</div>
+						</div>
+						<div class="neir21">
+							<img src="./img/bg5.png"/>
+							<div class="neir211" >
+								<div class="bttt">蝴蝶结衬衫变成了稳重优雅的学院风少女</div>
+								<div class="wenzi">两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易</div>
+							</div>
+						</div>
+						<div class="neir21">
+							<img src="./img/bg5.png"/>
+							<div class="neir211" >
+								<div class="bttt">蝴蝶结衬衫变成了稳重优雅的学院风少女</div>
+								<div class="wenzi">两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易</div>
+							</div>
+						</div>
+						<div class="neir21">
+							<img src="./img/bg5.png"/>
+							<div class="neir211" >
+								<div class="bttt">蝴蝶结衬衫变成了稳重优雅的学院风少女</div>
+								<div class="wenzi">两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易</div>
+							</div>
+						</div>
+						<div class="yeshu">
+								<a><div class="yeshu1" style="width:80px;">上一页</div></a>
+									
+								<a><div class="yeshu1" style="width:80px;">下一页</div></a>
+						</div>
+					</div> 
+					<div role="tabpanel" class="tab-pane" id="tab2">
+						<div class="neir21">
+							<img src="./img/bg5.png"/>
+							<div class="neir211" >
+								<div class="bttt">蝴蝶结衬衫变成了稳重优雅的学院风少女</div>
+								<div class="wenzi">两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易</div>
+							</div>
+						</div>
+						<div class="neir21">
+							<img src="./img/bg5.png"/>
+							<div class="neir211" >
+								<div class="bttt">蝴蝶结衬衫变成了稳重优雅的学院风少女</div>
+								<div class="wenzi">两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易</div>
+							</div>
+						</div>
+						<div class="neir21">
+							<img src="./img/bg5.png"/>
+							<div class="neir211" >
+								<div class="bttt">蝴蝶结衬衫变成了稳重优雅的学院风少女</div>
+								<div class="wenzi">两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易</div>
+							</div>
+						</div>
+						<div class="yeshu">
+								<a><div class="yeshu1" style="width:80px;">上一页</div></a>
+									
+								<a><div class="yeshu1" style="width:80px;">下一页</div></a>
+						</div>
+					</div> 
+					<div role="tabpanel" class="tab-pane" id="tab3">
+						<div class="neir21">
+							<img src="./img/bg5.png"/>
+							<div class="neir211" >
+								<div class="bttt">蝴蝶结衬衫变成了稳重优雅的学院风少女</div>
+								<div class="wenzi">两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易</div>
+							</div>
+						</div>
+						<div class="neir21">
+							<img src="./img/bg5.png"/>
+							<div class="neir211" >
+								<div class="bttt">蝴蝶结衬衫变成了稳重优雅的学院风少女</div>
+								<div class="wenzi">两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易</div>
+							</div>
+						</div>
+						<div class="yeshu">
+								<a><div class="yeshu1" style="width:80px;">上一页</div></a>
+									
+								<a><div class="yeshu1" style="width:80px;">下一页</div></a>
+						</div>
+					</div> 
+					<div role="tabpanel" class="tab-pane" id="tab4">
+						<div class="neir21">
+							<img src="./img/bg5.png"/>
+							<div class="neir211" >
+								<div class="bttt">蝴蝶结衬衫变成了稳重优雅的学院风少女</div>
+								<div class="wenzi">两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易两年前，首届高峰论坛在北京举行，各方一道规划政策沟通、设施联通、贸易</div>
+							</div>
+						</div>
+						<div class="yeshu">
+								<a><div class="yeshu1" style="width:80px;">上一页</div></a>
+								
+								<a><div class="yeshu1" style="width:80px;">下一页</div></a>
+						</div>
+					</div> 
+					<div role="tabpanel" class="tab-pane" id="tab5">这是..5.</div> 
+					<div role="tabpanel" class="tab-pane" id="tab6">这是..6.</div> 
+					<div role="tabpanel" class="tab-pane" id="tab7">这是..7.</div> 
+					<div role="tabpanel" class="tab-pane" id="tab8">这是..8.</div> 
+					
+				</div> 
+			</div>
+		</div>
+	</body>
+	<div class="foot">
+			<div class="foot1">
+				<div class="zixun">
+					<p style="width:100%;font-size:20px;color:#fff;">咨询热线：</p>
+					<p style="width:100%;font-size:32px;color:#0d61d4;margin-top:5px;margin-bottom:5px;">400-0000-000</p>
+				</div>
+				<div class="footr">
+					<div style="font-size:20px;color:#fff;margin-top: 30px;">快速进入</div>
+					<div class="lianjie2">
+						<ul style="margin-top:-30px;">
+							<li>女人美容衣装鞋饰商业街</li>
+							<li>美食餐饮商业街</li>
+							<li>家装用品商业街</li>
+							<li>宾馆民宿任你选</li>
+							<a href="./list.html"><li>高端家庭定制系列</li></a>
+							<li>交友</li>
+							<li>可追源式特色产品</li>
+							<li>家庭理财：个股走势之我言</li>
+							<li>农资农具商品街</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="foot2">Copyright © 2019-2019九号家庭 备案号：冀ICP备00000000号</div>
+	</div>
+</html>

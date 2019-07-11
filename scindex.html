@@ -1,0 +1,644 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="css/all.css" />
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<title>首页</title>
+	<style>
+        .ci a{
+            text-decoration: none !important;width: 47%;margin: 0 auto;
+        }
+        .guangg{
+            height: 100px;
+            margin-top: 15px;
+        }
+        .divci{
+            width: 100%;
+        }
+        #nav{height:50px;width: 1170px;margin: 0 auto;}
+        #nav *{margin:0;padding:0;}
+        #nav a{text-decoration:none;color:#333;}
+        /*一级菜单*/
+        .ul1{display:block;list-style-type:none;background: #fff;height:50px;width: 287px;}
+        .ul1 li{display:block;width:120px;height:50px; line-height:50px;text-align:center;border-right:solid 1px white;color:#fff;border-right:none;height:50px;width: 287px;text-align: left;text-indent: 2em}
+
+        .ul1{float:left;}
+        /*二级菜单*/
+        .ul2{display:none;background: #fff;}
+        .li1{width:287px; height:50px; line-height:50px;;}
+        .li1:hover ul{display:block;display: flex;flex-direction: column;}
+        /*三级菜单*/
+        .ul1 li:hover .ul3{display:none;background: #fff;}
+        .li1:hover ul li:hover .ul3{display:block; position: relative; left: 287px; top: -30px;}
+        .ul3{
+            margin-top:-25px !important;
+            width: 478px !important;
+            background-color: #fff;
+            height: 400px !important;
+        }
+        .limg1{
+            height: 220px !important;  
+        }
+        #li2{
+            width: 200px !important;
+            height: 50px !important;
+            font-size: 14px;
+            text-align: left;
+            height: 50px;
+            float: left;
+        }
+        .gengduo{
+            margin-top: 5px;
+        }
+        .syhead{
+            height: 40px;
+        }
+        #myCarousel{
+            height: 220px;
+            width: 100%;
+        }
+        .spxq{
+            margin-top: 0px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="se2" style="width:100%;height:100%;position: fixed;opacity: 0.6;background: #000;"></div>
+		<div class="sd" style="width:100%;height:100%;position: fixed;opacity: 0.6;background: #000;"></div>
+		<div class="sd">
+			<div style="width:100%;height:40px;margin: 0px;"></div>
+			<img class="gb3" src="./img/关闭3.png"/>
+			<a href="./list.html"><div style="margin-top:28px;">女人美容衣装鞋饰商业街</div></a>
+			<a href="./list.html"><div>美食餐饮商业街</div></a>
+			<a href="./list.html"><div>宾馆民宿任你选</div></a>
+			<a href="./list.html"><div>家装用品商业街</div></a>
+				<ul>
+					<li>家庭装修，装潢</li>
+					<li>床上用品</li>
+					<li>家居用品</li>
+				</ul>
+			<a href="./list.html"><div>高端家庭定制系列</div></a>
+				<ul>
+					<li>私家律师定制</li>
+					<li>私家厨师定制</li>
+					<li style="padding:13px 0px;">私家保健医生定制</li>
+					<li>私家护士定制</li>
+					<li style="padding:0px 15px;padding-top:10px;line-height: 15px;text-align: left;">私家美容美发
+							师定制</li>
+					<li>私家保镖定制</li>
+					<li>私家保洁定制</li>
+					<li>私家理财师定制</li>
+					<li>私家教师定制</li>
+					
+				</ul>
+			<a href="./list.html"><div>交友</div></a>
+				<ul>
+					<li>我为卿狂交友</li>
+					<li>高端交友</li>
+					<li>真诚姻缘</li>
+				</ul>
+			<a href="./list.html"><div>家庭理财：个股走势之我言</div></a>
+			<a href="./list.html"><div>农资农具商品街</div></a>
+
+		</div>
+		
+		<div class="dlheader">
+			<div id="header1" class="header1">
+				<a href="./index.html" style="text-decoration:none;color:#fff;">返回九号家庭商城首页</text></a>
+				<a href="./login.html"><button class="zc">注册</button></a>
+				<a href="./login.html">
+					<button class="dl">登录</button>
+				</a>
+			</div>
+		</div>
+		
+		<div class="sousuo">
+			<a href="./index.html"><text style="font-size:26px;color:#fff;float: left;">九号家庭</text></a>
+			<div class="city">
+				<p>保定</p>
+				<p>[ 切换 ]</p>
+			</div>
+
+			<div class="sou">
+				<!-- <input placeholder="请输入关键词"/> -->
+				<img class="se1" src="./img/搜索1.png" style="margin-top:12px;"/>
+			</div>
+			
+		</div>
+		
+			<div class="se">
+				<input placeholder="请输入关键词"/>
+				<button>搜索</button>
+			</div>
+			<script>
+				$('.sd1').click(function() {
+					$(".sd").css('display','block');
+				}); 
+				$('.gb3').click(function() {
+					$(".sd").css('display','none');
+				}); 
+				$('.se1').click(function() {
+					$(".se").css('display','block');
+					$(".se2").css('display','block');
+				}); 
+				$('.se2').click(function() {
+					$(".se").css('display','none');
+					$(".se2").css('display','none');
+				}); 
+			</script>
+        <div id="myCarousel" class="carousel slide">
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>   
+        
+            <div class="spxq">
+                <div id="myCarousel" class="carousel slide">
+                        <!-- 轮播（Carousel）指标 -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel"  data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel"  data-slide-to="1"></li>
+                           
+
+                        </ol>   
+                        <!-- 轮播（Carousel）项目 -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="./img/bg21.png" class="limg1" alt="First slide">
+                            </div>
+                            <div class="item">
+                                <img src="./img/bg5.png" class="limg1" alt="Second slide">
+                            </div>
+                           
+
+                           
+                        </div>
+                        <!-- 轮播（Carousel）导航 -->
+                       
+                </div> 
+        </div>
+        <div class="tuij">
+            <div style="height:60px;text-align: left;font-size: 24px;line-height: 60px;color:#333;">商品推荐</div>
+         
+            <div class="ci">
+                <a href="./scxq.html">
+                    <div class="divci">
+                        <img src="./img/bg5.png" style="width:100%;"/>
+                        <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                        <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                    </div>
+                </a>
+                <a href="./scxq.html">
+                    <div class="divci">
+                        <img src="./img/bg5.png" style="width:100%;"/>
+                        <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                        <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="guangg">
+				<img src="./img/bg7.png" style="width:100%;height:100%;"/>
+        </div>
+        <div style="width:100%;background:#f4f4f4;margin-top: 20px;">
+            <div style="height:10px;"></div>
+            <div class="jie">
+                <div class="syhead">
+                    <text style="color:#0d61d4;font-size:20px;">女人美容衣装鞋饰商业街</text>
+                    <a href="./sclist.html">
+                        <div class="gengduo">
+                            <text>更多</text>
+                            <img src="./img/bg4.png"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="ci">
+                    <a href="./scxq.html">
+                        <div class="divci">
+                            <img src="./img/bg5.png" style="width:100%;"/>
+                            <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                            <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                        </div>
+                    </a><a href="./scxq.html">
+                        <div class="divci">
+                            <img src="./img/bg5.png" style="width:100%;"/>
+                            <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                            <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                        </div>
+                    </a>
+                    <a href="./scxq.html">
+                        <div class="divci">
+                            <img src="./img/bg5.png" style="width:100%;"/>
+                            <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                            <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                        </div>
+                    </a><a href="./scxq.html">
+                        <div class="divci">
+                            <img src="./img/bg5.png" style="width:100%;"/>
+                            <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                            <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <div style="width:100%;background:#f4f4f4;">
+                <div style="height:10px;"></div>
+                <div class="jie">
+                    <div class="syhead">
+                        <text style="color:#0d61d4;font-size:20px;">美食餐饮饰商业街</text>
+                        <a href="./scindex.html">
+                            <div class="gengduo">
+                                <text>更多</text>
+                                <img src="./img/bg4.png"/>
+                            </div>
+                        </a>
+                    </div>
+                    
+                   <div class="ci">
+                    <a href="./scxq.html">
+                        <div class="divci">
+                            <img src="./img/bg5.png" style="width:100%;"/>
+                            <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                            <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                        </div>
+                    </a><a href="./scxq.html">
+                        <div class="divci">
+                            <img src="./img/bg5.png" style="width:100%;"/>
+                            <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                            <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                        </div>
+                    </a>
+                    <a href="./scxq.html">
+                        <div class="divci">
+                            <img src="./img/bg5.png" style="width:100%;"/>
+                            <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                            <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                        </div>
+                    </a><a href="./scxq.html">
+                        <div class="divci">
+                            <img src="./img/bg5.png" style="width:100%;"/>
+                            <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                            <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                        </div>
+                    </a>
+                </div>
+                   
+                </div>
+        </div>
+        <div style="width:100%;background:#f4f4f4;">
+                <div style="height:10px;"></div>
+                <div class="jie">
+                    <div class="syhead">
+                        <text style="color:#0d61d4;font-size:20px;">家装用品商业街</text>
+                        
+                        <a href="./scindex.html">
+                            <div class="gengduo" >
+                                <text>更多</text>
+                                <img src="./img/bg4.png"/>
+                            </div>
+                        </a>
+                    </div>
+                   
+                    
+                    <div class="ci">
+                            <a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a><a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a>
+                            <a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a><a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a>
+                        </div>
+
+                </div>
+        </div>
+        <div style="width:100%;background:#f4f4f4;">
+                <div style="height:10px;"></div>
+                <div class="jie">
+                    <div class="syhead">
+                        <text style="color:#0d61d4;font-size:20px;">宾馆民宿任你选</text>
+                        
+                        <a href="./scindex.html">
+                            <div class="gengduo">
+                                <text>更多</text>
+                                <img src="./img/bg4.png"/>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="ci">
+                            <a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a><a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a>
+                            <a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a><a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a>
+                        </div>
+
+                    
+                </div>
+        </div>
+         <div style="width:100%;background:#f4f4f4;">
+                <div style="height:10px;"></div>
+                <div class="jie">
+                    <div class="syhead">
+                        <text style="color:#0d61d4;font-size:20px;">宾馆民宿任你选</text>
+                        
+                        <a href="./scindex.html">
+                            <div class="gengduo" >
+                                <text>更多</text>
+                                <img src="./img/bg4.png"/>
+                            </div>
+                        </a>
+                    </div>
+                   
+                    <div class="ci">
+                            <a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a><a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a>
+                            <a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a><a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a>
+                        </div>
+
+                    
+                </div>
+        </div>
+        <div style="width:100%;background:#f4f4f4;">
+                <div style="height:10px;"></div>
+                <div class="jie">
+                    <div class="syhead">
+                        <text style="color:#0d61d4;font-size:20px;">交友</text>
+                        
+                        <a href="./scindex.html">
+                            <div class="gengduo">
+                                <text>更多</text>
+                                <img src="./img/bg4.png"/>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ci">
+                            <a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a><a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a>
+                            <a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a><a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a>
+                        </div>
+
+                    
+                </div>
+        </div>
+        <div style="width:100%;background:#f4f4f4;">
+                <div style="height:10px;"></div>
+                <div class="jie">
+                    <div class="syhead">
+                        <text style="color:#0d61d4;font-size:20px;">可追源式特色产品</text>
+                        
+                        <a href="./scindex.html">
+                            <div class="gengduo">
+                                <text>更多</text>
+                                <img src="./img/bg4.png"/>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ci">
+                            <a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a><a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a>
+                            <a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a><a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a>
+                    </div>
+
+                </div>
+        </div>
+         <div style="width:100%;background:#f4f4f4;">
+                <div style="height:10px;"></div>
+                <div class="jie">
+                    <div class="syhead">
+                        <text style="color:#0d61d4;font-size:20px;">家庭理财：个股走势之我言</text>
+                        
+                        <a href="./scindex.html">
+                            <div class="gengduo" >
+                                <text>更多</text>
+                                <img src="./img/bg4.png"/>
+                            </div>
+                        </a>
+                    </div>
+                  
+                    <div class="ci">
+                            <a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a><a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a>
+                            <a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a><a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a>
+                    </div>
+                    
+                    
+                </div>
+        </div>
+        <div style="width:100%;background:#f4f4f4;">
+                <div style="height:10px;"></div>
+                <div class="jie">
+                    <div class="syhead">
+                        <text style="color:#0d61d4;font-size:20px;">农资农具商品街</text>
+                        
+                        <a href="./scindex.html">
+                            <div class="gengduo">
+                                <text>更多</text>
+                                <img src="./img/bg4.png"/>
+                            </div>
+                        </a>
+                    </div>
+                  
+                    <div class="ci">
+                            <a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a><a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a>
+                            <a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a><a href="./scxq.html">
+                                <div class="divci">
+                                    <img src="./img/bg5.png" style="width:100%;"/>
+                                    <div class="spname1">晚礼服女2019新款宴会高贵优雅金色礼服裙长款 显瘦名媛派对连衣裙  优雅鱼尾  修身显瘦  气质体现</div>
+                                    <div class="spjiage"><text style="font-size:16px;">¥</text>1288.00</div>
+                                </div>
+                            </a>
+                    </div>
+                    
+                    
+                </div>
+        </div>
+        <div style="height:55px;background:#f4f4f4;"></div>
+    
+</body>
+    <div class="dbdaoh">
+        <a href="./scindex.html">
+            <div>
+                <img src="./img/z首页.png"/>
+                <div style="height:auto;color:#0d61d4;">首页</div>
+            </div>
+        </a>
+        <a href="./fenlei.html">
+            <div>
+                <img src="./img/x分类.png"/>
+                <div style="height:auto;">分类</div>
+            </div>
+        </a>
+        <a href="./gwc.html">
+            <div>
+                <img src="./img/x购物车.png"/>
+                <div style="height:auto;">购物车</div>
+            </div>
+        </a>
+        <a href="./grzx.html">
+            <div>
+                <img src="./img/x我的.png"/>
+                <div style="height:auto;">我的</div>
+            </div>
+        </a>
+    </div>
+
+</html>

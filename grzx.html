@@ -1,0 +1,171 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+	<link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="./css/awesome-bootstrap-checkbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/build.css">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<title>个人中心</title>
+	<style>
+        #nav{height:50px;width: 1170px;margin: 0 auto;}
+        #nav *{margin:0;padding:0;}
+        .jie{
+            padding: 0px;
+        }
+        .bai{
+            width: auto;
+            border-color: #f0f0f0;
+        }
+        .bai div{
+            width: 160px;
+        }
+        .divci{
+            width: 252px;
+        }
+        .spname1{
+            height: 46px;
+            white-space:normal;
+        }
+        a{
+            text-decoration: none !important;
+            color: #333;
+        }
+        a:hover{
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+        <div class="tijiao" style="display:flex;flex-direction: row;">
+            <div class="tjneir">
+                <div class="tjl">
+                    <div class="tjl1" style="background:linear-gradient(#409ef4, #196fdb);">
+                        <img src="./img/bg5.png"/>
+                        <text style="font-size:20px;color:#fff;line-height:125px;">空调承太郎</text>
+                    </div>
+                    <div class="tjl2" style="margin-top:-10px;border-radius:10px;">
+                        <div style="height:auto;border: none;width:94%;margin: 0 auto;">
+                            <div style="width:100%;height:10px;"></div>
+                            <a href="./wddd.html">
+                                <div style="height:35px;line-height:30px;border:none;color:#333;font-size: 16px;">
+                                    我的订单
+                                    <img src="./img/you.png" class="youz"/>
+                                    <text style="height:35px;line-height:30px;border:none;color:#666;font-size: 14px;float: right;">全部订单</text>
+                                </div>
+                            </a>
+                            <div style="width:100%;display:flex;height:80px;border:none;">
+                            <a href="./wddd.html">
+                                <div class="tjl2x"><img src="./img/fk.png"/>
+                                    <div class="d">待付款</div>
+                                </div>
+                            </a>
+                            <a href="./wddd.html">
+                                <div class="tjl2x"><img src="./img/fh.png"/>
+                                    <div class="d">待发货</div>
+                                </div>
+                            </a>
+                            <a href="./wddd.html">
+                                <div class="tjl2x"><img src="./img/sh.png"/>
+                                    <div class="d">待收货</div>
+                                </div>
+                            </a>
+                            <a href="./wddd.html">
+                                <div class="tjl2x"><img src="./img/pj.png"/>
+                                    <div class="d">待评价</div>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tjl2">
+                        <a href="./wdsc.html"><div><img src="./img/收藏.png"/>我的收藏 <img src="./img/you.png" class="youx"/></div></a>
+                        <a href="./shdz.html"><div><img src="./img/收货.png"/>收货地址 <img src="./img/you.png" class="youx"/></div></a>
+                        
+                        <a href="./sxgx.html"><div ><img src="./img/随心.png"/>随心感想 <img src="./img/you.png" class="youx"/></div></a>
+                        <a href="./wdfb.html"><div ><img src="./img/发布.png"/>我的发布 <img src="./img/you.png" class="youx"/></div></a>
+                        <a href="./zl.html"><div><img src="./img/资料.png"/>账号与资料 <img src="./img/you.png" class="youx"/></div></a>
+                        <a href="./xgmm.html"><div><img src="./img/SUO.png"/>账号与资料 <img src="./img/you.png" class="youx"/></div></a>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+       
+        <div class="dbdaoh" style="z-index:1000;">
+                <a href="./scindex.html">
+                    <div>
+                        <img src="./img/x首页.png"/>
+                        <div style="height:auto;">首页</div>
+                    </div>
+                </a>
+                <a href="./fenlei.html">
+                    <div>
+                        <img src="./img/x分类.png"/>
+                        <div style="height:auto;">分类</div>
+                    </div>
+                </a>
+                <a href="./gwc.html">
+                    <div>
+                        <img src="./img/x购物车.png"/>
+                        <div style="height:auto;">购物车</div>
+                    </div>
+                </a>
+                <a href="./grzx.html">
+                    <div>
+                        <img src="./img/z我的.png"/>
+                        <div style="height:auto;color:#0d61d4;">我的</div>
+                    </div>
+                </a>
+            </div> 
+   
+</body>
+</html>
+<script>
+		$('.scc1').click(function() {
+			$(".scc1").css('display', 'none');
+			$(".scc2").css('display', 'block');
+		});
+		$('.scc2').click(function() {
+			$(".scc2").css('display', 'none');
+			$(".scc1").css('display', 'block');
+		});
+        $('.scc3').click(function() {
+			$(".scc3").css('display', 'none');
+			$(".scc4").css('display', 'block');
+		});
+		$('.scc4').click(function() {
+			$(".scc4").css('display', 'none');
+			$(".scc3").css('display', 'block');
+		});
+        $('.scc5').click(function() {
+			$(".scc5").css('display', 'none');
+			$(".scc6").css('display', 'block');
+		});
+		$('.scc6').click(function() {
+			$(".scc6").css('display', 'none');
+			$(".scc5").css('display', 'block');
+		});
+</script>
+<!-- <ul id="myTab" class="nav nav-tabs" style="margin-left:110px;">
+        <li class="active">
+            <a  data-toggle="tab">
+                    综合
+            </a>
+        </li>
+        <li><a  data-toggle="tab">价格<img src="./img/bg19.png"/></a></li>
+        <li><a  data-toggle="tab">销量<img src="./img/bg19.png"/></a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="home">
+               
+        </div>
+</div>
+<script>
+        $(function () {
+            $('#myTab li:eq(1) a').tab('show');
+        });
+</script> -->

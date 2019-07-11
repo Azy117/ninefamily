@@ -1,0 +1,110 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="./css/awesome-bootstrap-checkbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/build.css">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<title>我的发布</title>
+	<style>
+      
+        .jie{
+            padding: 0px;
+        }
+        ul li a{
+            width: 100%;
+            height: 100%;
+        }
+
+        
+        a{
+            color: #333;
+        }
+        a:hover{
+            color: #333;
+        }
+        .xqull1{
+            padding: 0px;
+            margin: 0px;
+            flex-wrap: wrap;
+        }
+        .set{
+            width: 96%;
+            margin: 0 auto;
+            height: 40px;
+            line-height: 40px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .set input{
+            height: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+        <a href="./grzx.html">
+            <div class="back">
+                <img src="./img/返回.png" />
+                个人资料
+            </div>
+        </a>
+        <div style="width:96%;margin:0 auto;height:75px;line-height: 65px;font-size: 14px;margin-top: 20px;border-bottom:1px solid #f4f4f4;">
+                <text>头像</text>
+                <img src="./img/you.png" style="float:right;margin-top:26px;"/>
+                <img src="./img/头像.png" style="width:65px;height:65px;float: right;margin-right: 10px;"/> 
+        </div>
+            <div style="color:#333;font-size:16px;">
+                <div class="set">
+                    <div>姓名</div><div style="color:#666;">王二</div>
+                </div>
+                <div class="set">
+                    <div>身份证号</div><div style="color:#666;">130000000000000000</div>
+                </div>
+                <div class="set">
+                    <div>用户名</div><input class="huii" placeholder="请输入用户名"/>
+                </div>
+                <div class="set">
+                    <div>联系电话</div><input class="huii" placeholder="请输入联系电话"/>
+                </div>
+                <div class="set">
+                    <div>电子邮箱</div><input class="huii" placeholder="123456789@qq.com"/>
+                </div>
+                <div class="set" >
+                    <div>性别</div>
+                    <div>    
+                        <label class="radio-inline">
+                            <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 男
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 女
+                        </label>
+                    </div>
+                </div>
+                
+            </div>
+         
+
+
+        <button style="width:100%;height:45px;text-align:center;color:#fff;line-height: 45px;background:#0d61d4;border: none;position: absolute;bottom: 0px;">确认</button>
+</body>
+</html>
+<script>
+		
+        $(".xqlil").click(function(){
+            $('.xqlil').removeClass("active");
+            $(this).addClass("active");
+        });
+        $(".xqlil1").click(function(){
+            $('.xqlil1').removeClass("active");
+            $(this).addClass("active");
+        });
+        (function ($) { $('.spinner .btn:first-of-type').on('click', function() 
+        { $('.spinner input').val( parseInt($('.spinner input').val(), 10) - 1); });
+         $('.spinner .btn:last-of-type').on('click', function() { $('.spinner input').val( parseInt($('.spinner input').val(), 10) + 1); }); })(jQuery);
+        $(function () {
+            $('#myTab li:eq(1) a').tab('show');
+        });
+</script>
